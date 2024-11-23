@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Update Pet Details</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center alert alert-primary">Update Pet Information</h1>
+    <form action="{{ url_for('update', id_data=pet[0]) }}" method="POST">
+        <div class="form-group">
+            <label>Pet ID</label>
+            <input type="text" name="petid" class="form-control" value="{{ pet[0] }}" readonly>
+        </div>
+        <div class="form-group">
+            <label>Pet Name</label>
+            <input type="text" name="name" class="form-control" value="{{ pet[1] }}">
+        </div>
+        <div class="form-group">
+            <label>Owner's Email</label>
+            <input type="text" name="owner_email" class="form-control" value="{{ pet[4] }}">
+        </div>
+        <div class="form-group">
+            <label>Breed</label>
+            <input type="text" name="breed" class="form-control" value="{{ pet[2] }}">
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" name="age" class="form-control" value="{{ pet[3] }}">
+        </div>
+        <button type="submit" class="btn btn-success">Update</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

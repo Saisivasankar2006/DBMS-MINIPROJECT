@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6347 !important;
+}
+
+/* Background Image */
+.bkimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 60px;
+    opacity: 0.6;
+}
+
+/* Container Styling */
+.container {
+    padding: 2rem;
+}
+
+/* Table Styling */
+.table {
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table .btn {
+    margin: 5px;
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.6rem;
+    color: #007bff;
+}
+
+.close {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    margin-top: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+
+    .bkimg {
+        height: 200px;
+        object-fit: cover;
+    }
+}
